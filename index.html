@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="invital health, your local gym with a focus and belief in family, community and healthly living  .">
     <title>invital health</title>
     <!-- Bootstrap 5 with JS -->
     <link
@@ -15,8 +17,32 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <div>Navigation</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container"> <!--to ensure the logo/content lines up with the content below-->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/images/invitalgymnavlogo.png" alt="Logo" width="50" height="50">
+          <span class="ms-2">InVital Health</span>   <!-- class required for margin from logo-->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Header image with CTA -->
     <header class="container">
@@ -43,7 +69,7 @@
           <div class="col-12">Mission statement</div>
         </div>
       </section>
-    </main>
+    
 
      <!--Take a tour video section--> 
      <section class="container">

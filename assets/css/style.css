@@ -5,7 +5,9 @@
 :root {
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Varela", sans-serif;
-    --primary-color: rgb(43,59,75); /* Blue Fantastic */
+    --primary-color: #2b3b4b; /* Blue Fantastic */
+    --secondary-color: #cfe0f4; /*light breeze */
+
 
 }
 
@@ -45,3 +47,31 @@ h3 {
     display: flex;
     
 }
+
+
+/*Navbar styling to override Bootstrap dark theme*/
+
+.navbar {
+    background-color: #2b3b4b !important; /* Ensures background remains */
+  }
+  
+  .navbar a.nav-link,
+  .navbar-brand {
+    color: white !important; /* link and text color ghost white */
+  }
+  
+  .navbar a.nav-link:hover {
+    color: #a4bacd!important; /*  Change color heavenly blue on hover */
+  }
+  .navbar .container { /* removes border around the container in nav bar that allows the content in nav to line up with the rest of the content*/
+    border: none;
+
+/* updates the collapsed togglar for mobile use */
+
+}
+  .navbar-toggler {
+    border-color: white!important;
+  }
+  .navbar-toggler-icon {
+    filter: invert(100%); /* Inverts color (black to white) */
+  }
