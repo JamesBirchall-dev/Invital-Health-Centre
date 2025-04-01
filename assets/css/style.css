@@ -11,6 +11,7 @@
 
 }
 
+
 /* Global styles */
 
 body {
@@ -24,6 +25,9 @@ h3 {
     color: var(--primary-color);
 
 }
+
+/*reminder to set styles for size and color on h1-6 plus card classes/*
+
 
 /* grid visualisation CSS for testing */
 
