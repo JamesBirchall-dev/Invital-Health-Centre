@@ -156,3 +156,11 @@ h3 {
   color: #333; 
   font-size: 1.2rem; /*increases the font size */
 }
+
+
+.video-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
