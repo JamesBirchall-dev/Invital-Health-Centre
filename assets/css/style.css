@@ -100,13 +100,14 @@ h3 {
   padding-top: 20px;
   .card {
    background-color: rgb(4,73,149,0.8) /*blue matching carousel image rgb to adjust opacity to 80%*/
-        }
+           }
 
 /*Service card background and font stylings*/
 .card {
   height: 550px; /*to override the auto fit in the card and ensured uniformity*/
   
   border-color: #2b3b4b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 #services .row {
   display: flex;
@@ -125,12 +126,33 @@ h3 {
 .card-text {
   color: white;
  }
-.card-subtext {   /*subtext classes required to change font color*/
+.card-subtext {   /*subtext classes required to change font color within seperate paragraphs*/
   color: white;
 }
-.card-subtext2 {  /*subtext classes required to change font color*/
+.card-subtext2 {  /*subtext classes required to change font color within seperate paragraphs*/
   color: white;
 }
 .card-footer {
   color: white;
+}
+.col-12.text-center {
+  padding-top: 60px; /*create distance from service section*/
+  padding-bottom: 10px; /*pad out heading from main text */
+  background: none; /* Remove background color */
+  border: none; /* Remove border */
+ 
+}
+.col-12.text-center {
+  background: none;
+}
+
+
+
+.mission-paragraph {
+  background-color: #f0f8ff; /*light blue so the background image doesnt make text illegible*/
+  border-radius: 15px; /*radius for rounded edges */
+  padding: 20px; /* padding inside the paragraph */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  color: #333; 
+  font-size: 1.2rem; /*increases the font size */
 }
