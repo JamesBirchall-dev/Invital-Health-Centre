@@ -15,8 +15,15 @@
 /* Global styles */
 
 body {
-    font-family: var(--primary-font);    
+  
+    font-family: var(--primary-font);
+    background-image: url("/assets/images/invitalbackground.png");
+    background-repeat: no-repeat;
+   background-color: #cccccc;
+   background-size: cover;
 }
+    
+   
 
 h1,
 h2,
@@ -31,13 +38,8 @@ h3 {
 
 /* grid visualisation CSS for testing */
 
-.container,
-.row {
-    border: 2px solid black;
-             
 
-       
-    }
+           
 
 
 .col-12 {
@@ -49,6 +51,8 @@ h3 {
 
 .flex-container { 
     display: flex;
+    background-color: rgba(255, 255, 255);
+    
     
 }
 
