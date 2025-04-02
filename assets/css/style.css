@@ -221,3 +221,23 @@ footer a {
 footer a:hover {
   color: #fff; /* Change link color on hover */
 }
+
+/*join us table styling*/
+
+.table {
+      background-color: #f8f9fa; /* Light gray for table */
+}
+     .table th, .table td {
+        background-color: #88d7d8; /* light teal*/
+      }
+
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #8cc5ee; /* light blue*/
+      }
+
+/*contact page*/
+<style>
+  .top-image {
+    padding-bottom: 20px; /* Add padding below the image */
+  }
+</style>
