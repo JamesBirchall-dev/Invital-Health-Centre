@@ -95,6 +95,10 @@ h3 {
   border-radius: 50%;
   border: 1px solid white;
 }
+/*padding between nav and carousel*/
+header.container {
+  padding-top: 10px; 
+}
 
 #services {
   padding-top: 20px;
@@ -201,4 +205,19 @@ h3 {
     height: auto; /* Allow content to flow naturally */
     padding: 10px; /* Smaller padding to optimize space */
   }
+}
+
+/*test css for footer*/
+footer {
+  background-color: #333; /* Change this to your desired color */
+  color: white; /* Optional: Adjust text color to ensure good contrast */
+}
+
+/* Optional: Customize the color of links and icons inside the footer */
+footer a {
+  color: #ccc; /* Light color for links */
+}
+
+footer a:hover {
+  color: #fff; /* Change link color on hover */
 }
