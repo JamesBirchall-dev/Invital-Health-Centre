@@ -85,3 +85,52 @@ h3 {
   }
 
 
+/* Carousel styling increased size and change to white for better accessibility*/
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 70px;
+  width: 70px;
+  outline: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+#services {
+  padding-top: 20px;
+  .card {
+   background-color: rgb(4,73,149,0.8) /*blue matching carousel image rgb to adjust opacity to 80%*/
+        }
+
+/*Service card background and font stylings*/
+.card {
+  height: 550px; /*to override the auto fit in the card and ensured uniformity*/
+  
+  border-color: #2b3b4b;
+}
+#services .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-12 { /*removes border and background so cards stand alone on top of background image*/
+  background-color: transparent;
+  border: none;
+}
+  
+}
+.card-title {
+  color: white;
+}
+.card-text {
+  color: white;
+ }
+.card-subtext {   /*subtext classes required to change font color*/
+  color: white;
+}
+.card-subtext2 {  /*subtext classes required to change font color*/
+  color: white;
+}
+.card-footer {
+  color: white;
+}
