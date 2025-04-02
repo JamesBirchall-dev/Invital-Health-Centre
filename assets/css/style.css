@@ -177,9 +177,28 @@ h3 {
 }
 
 .text-box {
-  background-color: rgba(0, 123, 255, 0.1); /* Light blue */
+  background-color: rgba(86, 229, 222, 0.9); /* Light teal */
   border-radius: 10px;
-  width: 100%;
+  width: 50%;
+  height:365px;
   min-height: 100%;
   text-align: left;
+}
+
+/* Required as needed to fix the height for the text to align with the image -For smaller devices */
+@media (max-width: 768px) {
+  .text-box {
+    width:100%; /* Adjust width to be more responsive when using smaller devices*/
+    height: auto; /*  auto for better scaling */
+    padding: 15px; 
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  .text-box {
+    width: 100%; /* Further adjust the width for even smaller devices */
+    height: auto; /* Allow content to flow naturally */
+    padding: 10px; /* Smaller padding to optimize space */
+  }
 }
