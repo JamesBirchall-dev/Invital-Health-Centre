@@ -166,8 +166,8 @@ h3 {
 
 /*contact page specific*/
 .top-image {
-  height: 450px; /* Adjust as needed */
-  overflow: hidden; /* Ensures the image doesn't extend beyond the div */
+  height: 450px; 
+  overflow: hidden; /*to stop extend beyond the div */
 }
 
 .top-image img {
