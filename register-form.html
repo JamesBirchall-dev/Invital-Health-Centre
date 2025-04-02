@@ -54,9 +54,98 @@
         </nav>
     <main>
 
-        <!--Registration form-->
+      <header id="header" class="container section">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 text-center text-xl-start">
+                <h1 class="display-3">inVital Membership</h1>
+                <p class="my-4">
+                    Thank you for your interest in joining our health center, kindly fill out the form below and select which membership
+                    options you are interested in. Our team will reach out to you via your preferred contact method within 24 hours.
+                </p>
+            </div>
+        </div>
+      </header>     
+      <section class="container section">
+        <h2>Membership Options</h2>
+        <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Membership Type</th>
+            <th>Includes</th>
+            <th>Times</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><strong>Off-Peak (Single)</strong></td>
+          <td>Classes (off-peak timetable)</td>
+          <td>9:30am - 4:30pm</td>
+          <td><s>£25 per month</s> £15 per month (limited offer!)</td>
+        </tr>        
+          <td><strong>Full Membership (Single)</strong></td>
+          <td>Classes (all times)</td>
+          <td>Full timetable</td>
+          <td>£35 per month</td>
+        </tr>
+          <td><strong>Full Family Membership</strong></td>
+          <td>Classes (all times)</td>
+          <td>Full timetable</td>
+          <td>£65 per month</td>
+        </tr>  
+    </tbody>
+    </table>
+      </section>
+  
 
-    </main>
+        <!--Registration form section-->
+
+        <section id="booking-form" class="container section">
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-8">
+                  <h2>Register here to become a member</h2>
+                  <form>
+                      <div class="row">
+                          <div class="col-12 col-lg-6 mb-3">
+                              <label for="name" class="form-label">Name</label>
+                              <input class="form-control" id="name" required>
+                          </div>
+                          <div class="col-12 col-lg-6 mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input class="form-control" id="email" type="email" required>
+                          </div>
+                          <div class="col-12 col-lg-6 mb-3">
+                              <label for="phone" class="form-label">Phone number</label>
+                              <input class="form-control" id="phone" type="number" required>
+                          </div>
+                          <div class="col-12 col-lg-6 mb-3">
+                              <label for="event-type" class="form-label">Preferred Contact Method</label>
+                              <select id="event-type" class="form-select" required>
+                                  <option value="" selected>Select</option>
+                                  <option value="email">Email</option>
+                                  <option value="phone">Phone</option>
+                                 
+                              </select>
+                          </div>
+                          <div class="col-12 mb-3">
+                            <label for="cars">(Optional) Select memberships you are interested in so our team can tailor your registration journey. :</label><br>
+                              <input type="checkbox" id="off-peak-single" name="single-op" value="single-op">
+                              <label for="vehicle1"> Off-Peak (Single) <s>£25 per month</s> £15 per month (limited offer!) </label><br>
+                              <input type="checkbox" id="peak-single" name="single-p" value="single-p">
+                              <label for="vehicle2"> Full Membership (Single) £35 per month </label><br>
+                              <input type="checkbox" id="family-full" name="family-p" value="family-p">
+                              <label for="vehicle3"> Full Family Membership £65 per month</label><br>
+                              </select>
+                      </div>
+  
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </section>
+  </main>
+
+
 
     <!-- Bootstrap 5 with JS -->
     <script
