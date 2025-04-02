@@ -99,7 +99,9 @@ h3 {
 header.container {
   padding-top: 10px; 
 }
-
+header .col-12 { /*ensures no lines showing at the top*/
+  border: none;
+}
 #services {
   padding-top: 20px;
   .card {
