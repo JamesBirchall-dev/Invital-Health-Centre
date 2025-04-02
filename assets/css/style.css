@@ -175,3 +175,11 @@ h3 {
   height: 100%;
   object-fit: cover;
 }
+
+.text-box {
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue */
+  border-radius: 10px;
+  width: 100%;
+  min-height: 100%;
+  text-align: left;
+}
