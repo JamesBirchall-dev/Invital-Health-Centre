@@ -60,12 +60,12 @@
         <div class="col-12 col-xl-6"></div>
       </div>
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!-- Use data-bs-ride in Bootstrap 5 -->
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li> <!-- Use data-bs-target and data-bs-slide-to -->
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!-- Use data-bs-ride in Bootstrap 5 div needed for indicators to remove numbering -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="assets/images/Hero-desktop.png" alt="First slide">

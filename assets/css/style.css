@@ -157,10 +157,21 @@ h3 {
   font-size: 1.2rem; /*increases the font size */
 }
 
-
+/* video styling to ensure is centered and in proportion*/
 .video-container {
   display: flex;
   justify-content: center; 
   align-items: center; 
 }
 
+/*contact page specific*/
+.top-image {
+  height: 450px; /* Adjust as needed */
+  overflow: hidden; /* Ensures the image doesn't extend beyond the div */
+}
+
+.top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
