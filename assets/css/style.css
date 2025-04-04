@@ -17,7 +17,7 @@
 body {
   
   font-family: var(--primary-font);
-  background-image: url("assets/images/invitalbackground.png");
+  background-image: url("/invitalbackground.png");
   background-repeat: no-repeat;
    background-color: #cccccc;
    background-size: cover;
