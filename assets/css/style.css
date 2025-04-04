@@ -5,7 +5,7 @@
 :root {
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Varela", sans-serif;
-    --primary-color: #2b3b4b; /* Blue Fantastic */
+    --primary-color: #1f2226; /* Blue Fantastic */
     --secondary-color: #cfe0f4; /*light breeze */
 
 
@@ -17,13 +17,20 @@
 body {
   
   font-family: var(--primary-font);
+  color:#1f2226; 
+  font-weight: 500;
   background-image: url("/invitalbackground.png");
+  background-size: cover;
   background-repeat: no-repeat;
-   background-color: #cccccc;
-   background-size: cover;
-
-   
+  background-color: #cccccc;
+  height: 100%;  /*ensures footer stays at bottom*/
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
+  
+
     
    
 
@@ -35,26 +42,55 @@ h3 {
 
 }
 
+/* ensures transparent background appears around floating headers for contrast*/
+h2 {
+  display: inline-block;
+  background: rgba(179, 255, 241, 0.6);
+  border-radius: 16px;
+  
+}
+
+/*keeps transparent background styling consistant for contrast*/
+
+#header{
+  background: rgba(179, 255, 241, 0.6);
+  display: block; 
+  text-align: center; 
+  margin: 0 auto; 
+  width: 100%;
+  background: rgba(179, 255, 241, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
 /*reminder to set styles for size and color on h1-6 plus card classes/*
 
 
 /* grid visualisation CSS for testing */
 
 
-           
-
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-}
-
 /* flex container visualastion for testing*/
 
 .flex-container { 
     display: flex;
     background-color: rgba(255, 255, 255);
-    
+}
+
+/* to add transparent background to forms for better contrast to background image*/
+
+.transparent-box {
+  background: rgba(179, 255, 241, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+       
+
     
 }
 
@@ -85,6 +121,12 @@ h3 {
   .navbar-toggler-icon {
     filter: invert(100%); /* Inverts color (black to white) */
   }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5) ;
+  width: 300px;
+  align-items: center;
+}
 
 
 /* Carousel styling increased size and change to white for better accessibility*/
@@ -263,11 +305,4 @@ footer a:hover {
       flex: 1;
   }
 
-  /* Ensures full height so footer stays at the bottom */
-  html, body {
-    height: 100%;  
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
+ 
