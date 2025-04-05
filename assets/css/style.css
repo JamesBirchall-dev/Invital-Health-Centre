@@ -19,7 +19,7 @@ body {
   font-family: var(--primary-font);
   color:#1f2226; 
   font-weight: 500;
-  background-image: url("/invitalbackground.png");
+  background-image: url('/assets/images/invitalbackground.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #cccccc;
@@ -77,7 +77,7 @@ h2 {
 
 .flex-container { 
     display: flex;
-    background-color: rgba(255, 255, 255);
+   
 }
 
 /* to add transparent background to forms for better contrast to background image*/
@@ -126,6 +126,9 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5) ;
   width: 300px;
   align-items: center;
+  bottom: 50px;
+
+  
 }
 
 
@@ -153,11 +156,14 @@ header .col-12 { /*ensures no lines showing at the top*/
            }
 
 /*Service card background and font stylings*/
-.card {
-  height: 550px; /*to override the auto fit in the card and ensured uniformity*/
-  
-  border-color: #2b3b4b;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card-body {
+  min-height: 290px; /* Default style */
+}
+
+@media (max-width: 600px) {
+  .card-body {
+    min-height: 150px; /* Overrides for smaller screens */
+  }
 }
 #services .row {
   display: flex;
@@ -168,7 +174,12 @@ header .col-12 { /*ensures no lines showing at the top*/
   background-color: transparent;
   border: none;
 }
-  
+
+.card-img-top {
+  min-height: 250px; /* Adjust as needed */
+ 
+}
+
 }
 .card-title {
   color: white;
@@ -196,10 +207,10 @@ header .col-12 { /*ensures no lines showing at the top*/
   background: none;
 }
 
-
+/*Mission statement additional background with stronger opacity for larger body of text */
 
 .mission-paragraph {
-  background-color: #f0f8ff; /*light blue so the background image doesnt make text illegible*/
+  background-color: #f0f8ff; 
   border-radius: 15px; /*radius for rounded edges */
   padding: 20px; /* padding inside the paragraph */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
