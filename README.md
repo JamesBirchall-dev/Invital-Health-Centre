@@ -45,7 +45,7 @@ As the brand name indicates, this gym’s main focus is an inviting place for al
 
 # Color
 
-![Image](assets/Readmeassets/readme-color%20pallet.png "icon")
+![Image](assets/Readmeassets/readme-color%20pallet.webp "icon")
 
 Color samples taken from appropiate branding image that will be the in landing view on the site. 
 
@@ -53,7 +53,7 @@ Teal variants also to be used to compliment.
 
 # Logo
 
-![Image](assets/Readmeassets/readme%20-logo.png "icon")
+![Image](assets/Readmeassets/readme%20-logo.webp "icon")
 Generated using https://www.design.com/
 - Simple 2 tone for favicon and nav bar
 
@@ -64,7 +64,7 @@ https://fonts.google.com/specimen/Montserrat?categoryFilters=Sans+Serif:%2FSans%
 
 Listed as one of the best fonts for accessibility, large rounded lettering is easuier for people with dyslexia to read. 
 
-![Image](assets/Readmeassets/readme%20-font.png "icon")
+![Image](assets/Readmeassets/readme%20-font.webp "icon")
 
 
 
