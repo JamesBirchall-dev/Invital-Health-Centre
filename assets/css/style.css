@@ -19,7 +19,7 @@ body {
   font-family: var(--primary-font);
   color:#1f2226; 
   font-weight: 500;
-  background-image: url('assets/images/invitalbackground.webp');
+  background-image: url('/assets/images/invitalbackground.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #cccccc;
@@ -270,14 +270,7 @@ footer {
   color: white; /* Optional: Adjust text color to ensure good contrast */
 }
 
-/* Optional: Customize the color of links and icons inside the footer */
-footer a {
-  color: #ccc; /* Light color for links */
-}
 
-footer a:hover {
-  color: #fff; /* Change link color on hover */
-}
 
 /*join us table styling*/
 
@@ -306,11 +299,14 @@ footer a:hover {
   .footer a {
     margin: 0 15px; /*  spacing between icons */
     font-size: 24px; /*icon size*/
-    color: #645af9; /* icon color */
+    color: #ffffff; /* icon color */
     transition: color 0.3s; /*hover*/
        
   }
 
+footer a:hover {
+  color: #4abbe1; /* Change link color on hover */
+}
   
     main {
       flex: 1;
