@@ -54,10 +54,10 @@
         </nav>
     <main>
 
-      <header id="header" class="container section trasnparent-box">
+      <header id="header" class="container section transparent-box">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center text-xl-start">
-                <h1 class="display-3">inVital Membership</h1>
+                <h1>inVital Membership</h1>
                 <p class="my-4">
                     Thank you for your interest in joining our health center, kindly fill out the form below and select which membership
                     options you are interested in. Our team will reach out to you via your preferred contact method within 24 hours.
@@ -65,7 +65,7 @@
             </div>
         </div>
       </header>     
-      <section class="container section trasnparent-box"> 
+      <section class="container section transparent-box"> 
         <div class="table-responsive"> <!--bootstrap for overflow in container-->
           <table class="table table-striped">
         <thead>
@@ -82,12 +82,14 @@
           <td>Classes (off-peak timetable)</td>
           <td>9:30am - 4:30pm</td>
           <td><s>£25 per month</s> £15 per month (limited offer!)</td>
-        </tr>        
+        </tr> 
+        <tr>   
           <td><strong>Full Membership (Single)</strong></td>
           <td>Classes (all times)</td>
           <td>Full timetable</td>
           <td>£35 per month</td>
-        </tr>
+        </tr> 
+        <tr> 
           <td><strong>Full Family Membership</strong></td>
           <td>Classes (all times)</td>
           <td>Full timetable</td>
@@ -95,6 +97,7 @@
         </tr>  
     </tbody>
     </table>
+    </div> <!--end of table responsive-->
       </section>
   
 
@@ -128,16 +131,17 @@
                               </select>
                           </div>
                           <div class="col-12 mb-3">
-                            <label for="cars">(Optional) Select memberships you are interested in so our team can tailor your registration journey. :</label><br>
-                              <input type="checkbox" id="off-peak-single" name="single-op" value="single-op">
-                              <label for="off-peak-single"> Off-Peak (Single) <s>£25 per month</s> £15 per month (limited offer!) </label><br>
-                              <input type="checkbox" id="peak-single" name="single-p" value="single-p">
-                              <label for="peak-single"> Full Membership (Single) £35 per month </label><br>
-                              <input type="checkbox" id="family-full" name="family-p" value="family-p">
-                              <label for="family-full"> Full Family Membership £65 per month</label><br>
-                              </select>
+                            <p>Optional) Select the memberships you are interested in so our team can tailor your registration journey. </p>
+                                <input type="checkbox" id="off-peak-single" name="single-op" value="single-op">
+                                <label for="off-peak-single"> Off-Peak (Single) <s>£25 per month</s> £15 per month (limited offer!) </label><br>
+                                <input type="checkbox" id="peak-single" name="single-p" value="single-p">
+                                <label for="peak-single"> Full Membership (Single) £35 per month </label><br>
+                                <input type="checkbox" id="family-full" name="family-p" value="family-p">
+                                <label for="family-full"> Full Family Membership £65 per month</label><br>
+                              
+                        </div>
                       </div>
-  
+
                       <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
               </div>
