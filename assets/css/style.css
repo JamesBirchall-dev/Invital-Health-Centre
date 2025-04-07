@@ -4,7 +4,7 @@
 html { /* Ensures the page takes up the full height of the viewport */
     height: 100%;
     box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
-  height: 100%;
+  
 }
 
 /* CSS Variables */
@@ -17,9 +17,6 @@ html { /* Ensures the page takes up the full height of the viewport */
 
 }
 
-
-
-
 /* Global styles */
 
 body {
@@ -29,13 +26,17 @@ body {
   font-weight: 500;
   background-image: url("../images/invitalbackground.webp");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #cccccc;
   height: 100%;  /*ensures footer stays at bottom*/
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Ensures the body takes up the full height of the viewport */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
   
 main {
@@ -163,6 +164,11 @@ header .col-12 { /*ensures no lines showing at the top*/
 #services {
   padding-top: 20px;
 }
+.card {
+  align-items: center;
+}
+
+
 #services .card {
   background-color: rgba(4, 73, 149, 0.8); /* Use rgba for opacity */
 }
@@ -170,12 +176,14 @@ header .col-12 { /*ensures no lines showing at the top*/
 /*Service card background and font stylings*/
 .card-body {
   min-height: 290px; /* Default style */
+  width: 100%; /* percentage for responsive design */
+  
 }
 
 @media (max-width: 600px) {
   .card-body {
     min-height: 150px; /* Overrides for smaller screens */
-  }
+      }
 }
 #services .row {
   display: flex;
@@ -189,6 +197,10 @@ header .col-12 { /*ensures no lines showing at the top*/
 
 .card-img-top {
   min-height: 250px; /* Adjust as needed */ 
+  height:259px;
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the card area without distortion */
+
 }
 
 .card-title {
