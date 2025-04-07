@@ -21,7 +21,7 @@ body {
   font-family: var(--primary-font);
   color:#1f2226; 
   font-weight: 500;
-  background-image: url('/assets/images/invitalbackground.webp');
+  background-image: url("../images/invitalbackground.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #cccccc;
