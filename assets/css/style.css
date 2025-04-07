@@ -77,12 +77,8 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* flex container visualastion for testing*/
 
-.flex-container { 
-    display: flex;
-   
-}
+
 
 /* to add transparent background to forms for better contrast to background image*/
 
@@ -168,7 +164,7 @@ header .col-12 { /*ensures no lines showing at the top*/
 
 /*Service card background and font stylings*/
 .card-body {
-  min-height: 290px; /* Default style */
+  min-height: 250px; /* Default style */
   width: 100%; /* percentage for responsive design */
   
 }
@@ -178,6 +174,10 @@ header .col-12 { /*ensures no lines showing at the top*/
     min-height: 150px; /* Overrides for smaller screens */
       }
 }
+
+
+
+
 #services .row {
   display: flex;
   justify-content: center;
@@ -220,6 +220,44 @@ header .col-12 { /*ensures no lines showing at the top*/
 }
 .col-12.text-center {
   background: none;
+}
+
+/*Success page styling to ensure it is consistant with the rest of the site*/
+
+
+#success {
+  background: rgba(179, 255, 241, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 20px auto; /* Center the box */
+}
+
+.content-section {
+  background-color: #e7eeee; /* off-white/ Light gray background color to not clash with map green */
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff; /* Blue color for heading to match with the CTA Button */
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  color: #000000; /* Darker color for text */
+}
+
+
+/* Style for the map iframe */
+.content-section iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* shadow effect */
+  
 }
 
 /*Mission statement additional background with stronger opacity for larger body of text */
@@ -308,12 +346,6 @@ header .col-12 { /*ensures no lines showing at the top*/
     height: auto; /* Allow content to flow naturally */
     padding: 10px; /* Smaller padding to optimize space */
   }
-}
-
-/*test css for footer*/
-footer {
-  background-color: #333; /* Change this to your desired color */
-  color: white; /* Optional: Adjust text color to ensure good contrast */
 }
 
 
