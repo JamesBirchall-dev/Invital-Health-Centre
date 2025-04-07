@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
-        content="invital health, your local gym with a focus and belief in family, community and healthly living  .">
+        content="invital health, your local gym with a focus and belief in family, community and healthly living.">
     <title>invital health</title>
 
     <!--favicon made using site logo-->
@@ -21,7 +21,38 @@
       crossorigin="anonymous"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+
+     <!-- Inline Styles -->
+     <style>
+      /* Custom background color for address section */
+      .content-section {
+        background-color: #e7eeee; /* off-white/ Light gray background color */
+        padding: 30px;
+        border-radius: 8px;
+      }
+
+      /* Style for the address */
+      .content-section h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #007bff; /* Blue color for heading */
+      }
+
+      .content-section p {
+        font-size: 1.1rem;
+        color: #333; /* Darker color for text */
+      }
+
+      /* Style for the map iframe */
+      .content-section iframe {
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* shadow effect */
+      }
+
+      
+    </style>
   </head>
   <body>
 
@@ -46,7 +77,7 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item"></li>
+            <li class="nav-item">
                     <a href="register-form.html" class="btn btn-primary ms-lg-3">Join</a> 
             </li> 
           </ul>
@@ -92,14 +123,21 @@
         </div>
     </div>
 </div> 
- <!-- Footer -->
- <footer>
-  <div class="footer">
-   <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-   <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
-   <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
- </div>
- </footer>
+
+<!-- Footer -->
+<footer> 
+<div class="footer">
+    <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank" aria-label="Visit our Twitter page">
+      <i class="bi bi-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page">
+      <i class="bi bi-instagram"></i>
+    </a>
+  </div>
+</footer>
   
      <!-- Bootstrap 5 with JS -->
      <script
