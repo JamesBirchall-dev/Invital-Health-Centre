@@ -227,6 +227,7 @@ header .col-12 { /*ensures no lines showing at the top*/
   display: flex;
   justify-content: center; 
   align-items: center; 
+  padding-bottom: 20px;
 }
 
 /*contact page specific*/
