@@ -290,15 +290,14 @@ footer {
       }
 /*Footer Styling*/
 .footer {
+  background-color: #2b3b4b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60px; 
-  background-color: #2b3b4b;
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-  padding-top: 20px; /* Add padding above the footer*/
   }
   .footer a {
     margin: 0 15px; /*  spacing between icons */
