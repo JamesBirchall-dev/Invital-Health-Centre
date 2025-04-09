@@ -169,6 +169,8 @@ header .col-12 { /*ensures no lines showing at the top*/
   
 }
 
+
+
 @media (max-width: 600px) {
   .card-body {
     min-height: 150px; /* Overrides for smaller screens */
@@ -194,6 +196,11 @@ header .col-12 { /*ensures no lines showing at the top*/
   width: 100%;
   object-fit: cover; /* Ensures the image covers the card area without distortion */
 
+}
+@media (min-width: 768px) {
+  .card-img-top {
+    width: 100%; /* Apply fixed height only on tablets and up */
+  }
 }
 
 .card-title {
