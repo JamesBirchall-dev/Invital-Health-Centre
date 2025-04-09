@@ -53,26 +53,18 @@ h3 {
 
 }
 
-/* ensures transparent background appears around floating headers for contrast*/
-h2 {
-  display: inline-block;
-  background: rgba(179, 255, 241, 0.6);
-  border-radius: 16px;
-  
-}
+
 
 /*keeps transparent background styling consistant for contrast*/
-
+h1,
 #header{
   background: rgba(179, 255, 241, 0.6);
-  display: block; 
+  
   text-align: center; 
   margin: 0 auto; 
-  width: 100%;
-  background: rgba(179, 255, 241, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -169,8 +161,6 @@ header .col-12 { /*ensures no lines showing at the top*/
   
 }
 
-
-
 @media (max-width: 600px) {
   .card-body {
     min-height: 150px; /* Overrides for smaller screens */
@@ -197,11 +187,6 @@ header .col-12 { /*ensures no lines showing at the top*/
   object-fit: cover; /* Ensures the image covers the card area without distortion */
 
 }
-@media (min-width: 768px) {
-  .card-img-top {
-    width: 100%; /* Apply fixed height only on tablets and up */
-  }
-}
 
 .card-title {
   color: white;
@@ -219,7 +204,7 @@ header .col-12 { /*ensures no lines showing at the top*/
   color: white;
 }
 .col-12.text-center {
-  padding-top: 60px; /*create distance from service section*/
+  padding-top: 10px; /*space between carousel service section*/
   padding-bottom: 10px; /*pad out heading from main text */
   background: none; /* Remove background color */
   border: none; /* Remove border */
@@ -243,9 +228,10 @@ header .col-12 { /*ensures no lines showing at the top*/
 }
 
 .content-section {
-  background-color: #e7eeee; /* off-white/ Light gray background color to not clash with map green */
-  padding: 30px;
+  background-color: #e7eeee; /* off-white/ Light green background color to not clash with map green */
+  padding: 20px;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .content-section h2 {
@@ -270,7 +256,7 @@ header .col-12 { /*ensures no lines showing at the top*/
 /*Mission statement additional background with stronger opacity for larger body of text */
 
 .mission-paragraph {
-  background-color: #f0f8ff; 
+  background-color: #f0fbff; 
   border-radius: 15px; /*radius for rounded edges */
   padding: 20px; /* padding inside the paragraph */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
