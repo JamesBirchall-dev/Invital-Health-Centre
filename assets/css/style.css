@@ -325,8 +325,6 @@ header .col-12 { /*ensures no lines showing at the top*/
   background-color: rgba(86, 229, 222, 0.9); /* Light teal */
   border-radius: 10px;
   width: 50%;
-  height:365px;
-  min-height: 100%;
   text-align: left;
 }
 
