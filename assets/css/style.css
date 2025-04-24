@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: var(--primary-font);
-  color: #1f2226;
+  color: var(--primary-color);
   font-weight: 500;
   background-image: url("../images/invitalbackground.webp");
   background-size: cover;
@@ -59,7 +59,7 @@ main {
 h1,
 h2,
 h3 {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   color: var(--primary-color);
 }
 
@@ -80,6 +80,12 @@ h1,
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+p {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
 
 /* to add transparent background to forms for better contrast to background image*/
 
@@ -123,6 +129,7 @@ h1,
           filter: invert(100%); /* Inverts color (black to white) */
 }
 
+/* Carousel transparent box to provide contrast over image*/
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   width: 300px;
@@ -130,6 +137,9 @@ h1,
       -ms-flex-align: center;
           align-items: center;
   bottom: 50px;
+}
+#carouselExampleIndicators p {
+  color: var(--secondary-color);
 }
 
 /* Carousel styling increased size and change to white for better accessibility*/
@@ -218,21 +228,21 @@ header .col-12 {
 }
 
 .card-title {
-  color: white;
+  color: var(--secondary-color)
 }
 .card-text {
-  color: white;
+  color: var(--secondary-color)
 }
 .card-subtext {
   /*subtext classes required to change font color within seperate paragraphs*/
-  color: white;
+  color: var(--secondary-color)
 }
 .card-subtext2 {
   /*subtext classes required to change font color within seperate paragraphs*/
-  color: white;
+  color: var(--secondary-color)
 }
 .card-footer {
-  color: white;
+  color: var(--secondary-color)
 }
 .col-12.text-center {
   padding-top: 10px; /*space between carousel service section*/
@@ -273,7 +283,7 @@ header .col-12 {
 
 .content-section p {
   font-size: 1.1rem;
-  color: #000000; /* Darker color for text */
+  
 }
 
 /* Style for the map iframe */
@@ -286,12 +296,11 @@ header .col-12 {
 /*Mission statement additional background with stronger opacity for larger body of text */
 
 .mission-paragraph {
-  background-color: #f0fbff;
+  background-color: var(--secondary-color)
   border-radius: 15px; /*radius for rounded edges */
   padding: 20px; /* padding inside the paragraph */
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
-  color: #333;
   font-size: 1.2rem; /*increases the font size */
 }
 
@@ -385,7 +394,7 @@ header .col-12 {
 /*Footer Styling*/
 .footer {
   background-color: #2b3b4b;
-  color: white;
+  color: white;/* for maxiumum contrast accessibility */
   padding: 20px 0;
   text-align: center;
   width: 100%;
