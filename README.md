@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/readmeassets/invitaldevices.jpg" style="background-color: black" alt="invital devices">
+  <img src="assets/readmeassets/readme-invitaldevices.jpg" style="background-color: black" alt="invital devices">
 </div>
 
 
@@ -169,22 +169,22 @@ The Business Goals of inVital Health Centre are:
 Wireframes:
 Index page
 <div align="center">
-  <img src="assets/readmeassets/index wireframe.png" style="background-color: black" alt="index wireframe">
+  <img src="assets/readmeassets/readme-index-wireframe.png" style="background-color: black" alt="index wireframe">
 </div>
 
 Classes page
 <div align="center">
-  <img src="assets/readmeassets/classes wireframe.png" style="background-color: black" alt="classes wireframe">
+  <img src="assets/readmeassets/readme-classes-wireframe.png" style="background-color: black" alt="classes wireframe">
 </div>
 
 Contact page
 <div align="center">
-  <img src="assets/readmeassets/contact wireframe.pngg" style="background-color: black" alt="index wireframe">
+  <img src="assets/readmeassets/contact-wireframe.pngg" style="background-color: black" alt="index wireframe">
 </div>
 
 Contact form
 <div align="center">
-  <img src="assets/readmeassets/contact -form wireframe.png" style="background-color: black" alt="contact form wireframe">
+  <img src="assets/readmeassets/readme-contact-form-wireframe.png" style="background-color: black" alt="contact form wireframe">
 </div>
 
 Register form
