@@ -269,7 +269,7 @@ header .col-12 {
 }
 
 .content-section {
-  background-color: #e7eeee; /* off-white/ Light green background color to not clash with map green */
+  background-color: #ffffff; /* off-white/ Light green background color to not clash with map green */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -296,7 +296,7 @@ header .col-12 {
 /*Mission statement additional background with stronger opacity for larger body of text */
 
 .mission-paragraph {
-  background-color: var(--secondary-color)
+  background-color: var(--secondary-color);
   border-radius: 15px; /*radius for rounded edges */
   padding: 20px; /* padding inside the paragraph */
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
