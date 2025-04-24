@@ -447,7 +447,6 @@ Spacing between class containers to seperate them visually whilst optimising spa
 ## Frameworks
 - [Bootstrap4](https://getbootstrap.com/)
     * Used for basic styles and outline.
-
 ## Libraries
 - [JQuery](https://jquery.com/)
     * Animations and click functions.
@@ -482,53 +481,53 @@ Spacing between class containers to seperate them visually whilst optimising spa
 
 # Testing
 ## Methods
+
+- [Full testing external mastersheet](https://docs.google.com/spreadsheets/d/1MpcjnFR0sRtm0FBuqfoiV8ybn5v_BY5CXubD8ImN6pg/edit?usp=sharing).
+
 ### Validation
 - HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/).
-- Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
-- Each javascript file was tested on the site for errors and functionality using the console and with [JSHint](https://jshint.com/).
+
+
 
 ### General Testing
-- Each feature was developed and tested in its own branch before being merged with master. Branches were subsequently deleted.
-- Each time a feature was added, all the functions were tested to see if there was an impact.
+
 - The site was sent to friends for feedback and testing.
 - All forms have validation and will not submit without the proper information.
-- .gitignore file has been included to prevent system file commits.
-- The image loading blur has been thoroughly tested and gone through numerous iterations to optimise the smoothness of the transition on different devices and internet speeds.
-- Backup Map functions have been tested in a local deployment.
-- Email error functions have been tested offline as well.
+- Youtube Video embed functionality tested.  
+- Map interaction controls fully tested. 
 - External links open in a new tab.
+- Font and color placement.
+- Image resolutions intrinsic vs rendered checekd. 
 
 ### Mobile Testing
-- I tested the site personally on my Android device, going through the entire process, checking buttons, functions, checking out, etc. I was personally unable to test on iOS.
+- I tested the site personally on my Android Galaxy S24 device, going through the entire process, checking buttons, functions  out, etc. I was personally unable to test on iOS.
 - The site was sent to friends and relatives for them to follow the same process. They have tested on their devices, including iOS.
 - Chrome was utilised to inspect the site in mobile format, going through the pages and functions.
 
 ### Desktop Testing
-- The site was developed on a Chromebook and, as such, the majority of testing occurred on Chrome.
+- The majority of testing occurred on Chrome.
 - The site was tested by friends and relatives on numerous desktop devices.
-- The site was marginally tested on other browsers, such as Firefox and Edge.
+- The sites functionality and navigation have been tested on Chrome, Firefox and Edge. 
 - Internet Explorer was not tested and the site was not developed with it in mind as support for the browser is gradually being dropped.
+
+### Functionality & Navigation by Browser and Device
+
+
+### Lighthouse Testing 
+
+## 
+
+
 
 ## Bugs
 ### Known Bugs
-- Occasionally on a device with low RAM, the Google Maps API won't load.
-- Devices with low RAM may have stuttered animations.
-- Offline, using the backup map, the images don't switch the first time the page loads. No errors are shown on the console. A refresh usually solves the issue.
-- Very slow connections may have users see the thumbnails pop in during iframe loading, rather than having the switch occur during the animation.
+
+
+
+
 
 ### Fixed Bugs
-- Jumbotron image wouldn't de-blur. Fixed by adding a custom class for selection and differentiation.
-- Markers wouldn't load if the connection to the API was slow. Fixed by adding a backup array to be used as a fall-back.
-- EmailJS wasn't allowing newsletters to be sent on the contact page. Fixed by giving each form a separate ID.
-- The map info window wouldn't dispose of itself but would open multiple instances, one over the other. Fixed by moving the initialisation instance outside of the click function.
-- The info window would concatenate one country's information with another after clicked. Fixed by clearing the info window content on each click before populating it with info.
-- If a country had multiple first languages, the info window would have a display that clipped them as they were stored in an array themselves. Fixed by writing a custom function to deal with languages.
-- All map markers would bounce if they had animations set to active. Fixed by looping through the markers and setting them to no animation before activating the clicked marker's animation.
-- The modal for images in the gallery wouldn't open because of the blur function. Fixed by changing the HTML structure on the page and the iframe.
-- One I added SASS, many of the site's display features were broken. Fixed by cleaning up the CSS files and removing clashing styles.
-
-----
 
 # Deployment
 ## Local Deployment
