@@ -38,23 +38,24 @@
     <li><details>
     <summary><a href="#page-elements">Page Elements</a></summary>
 
-    - [All Pages](#all-pages)
-    - [Index Page](#index-page)
-    - [Gallery Page](#gallery-page)
-    - [Contact Page](#contact-page)
-    </details></li>
-
-    <li><details>
-    <summary><a href="#additional-features">Additional Features</a></summary>
-
-    - [Image Loading Blur](#image-loading-blur)
-    - [Email](#email)
-    </details></li>
+     - [All Pages](#all-pages)
+     - [Navigation](#navbar)
+	   - [Footer](#footer)
+     - [Index Page]{#index-page)
+     - [Carousel with Captions](#carousel-with-captions)
+     - [Service Card Section](#service-card-section)
+     - [Mission Statement Section](#mission-statement-section_
+     - [Take the Tour Video Section](#take-the-tour-video-section)
+     - [Classes Page](#classes-page)
+     - [Contact Page](#contact-page)
+     - [Register Page](#register-page)
+     - [Success Page](#success-page)
+    </details></li> 
 
     <li><details>
     <summary><a href="#feature-ideas">Feature Ideas</a></summary>
 
-    - [Basic](#basic)
+    - [Future Developement Ideas](#future-developement-ideas)
     - [Content](#content)
     </details></li>
     </ul>
@@ -66,9 +67,7 @@
     - [Languages](#languages)
     - [Frameworks](#frameworks)
     - [Libraries](#libraries)
-    - [APIs](#apis)
-    - [Platforms](#platforms)
-    - [Other Tools](#other-tools)
+  
 </details>
 
 4. <details open>
@@ -80,16 +79,17 @@
 
     - [Validation](#validation)
     - [General Testing](#general-testing)
+    - [User Stories Testing](#user-stories-testing)
     - [Mobile Testing](#mobile-testing)
     - [Desktop Testing](#desktop-testing)
+    - [Functionality & Navigation by Browser and Device](#functionality-and-navigation-by-browser-and-device)
+    - [Lighthouse Testing](#lighthouse-testing)
+
     </details></li>
 
     <li><details>
     <summary><a href="#bugs">Bugs</a></summary>
-
-    - [Known Bugs](#known-bugs)
-    - [Fixed Bugs](#fixed-bugs)
-    </details></li>
+ 
     </ul>
 </details>
 
@@ -150,19 +150,19 @@ inVital Health Centre fills these needs by:
 
 ### Business Goals
 The Business Goals of inVital Health Centre are:
-- Increase in off-peak membership ratio. 
-- General increase in traffic and membership enrolment. 
-- Reduce onsite admin time. 
-- Increase in the 'Health Forum' class enrolment. 
+1. Increase in off-peak membership ratio. 
+2. General increase in traffic and membership enrolment. 
+3. Reduce onsite admin time. 
+4 Increase in the 'Health Forum' class enrolment. 
 
 ### User Stories
 1. As a user interested in joining a gym, I want an easy to navigate website with all the information easy to find.
-0. I expect to be able to find out what facilities and classes the gym has.
-0. I expect to be able to register to join as a member.
-0. I expect to be able to contact and find the health centre. 
-0. I expect to see imagery which is health focussed. 
-0. I expect to be able to read more detailed information about the classes.
-0. I expect to be able to follow the health centre through social media.
+2. I expect to be able to find out what facilities and classes the gym has.
+3. I expect to be able to register to join as a member.
+4. I expect to be able to contact and find the health centre. 
+5. I expect to see imagery which is health focussed. 
+6. I expect to be able to read more detailed information about the classes.
+7. I expect to be able to follow the health centre through social media.
 
 ## Visual Design
 ### Wireframes
@@ -202,7 +202,7 @@ Is bold and a favourite for headings. It has very strong geometric values, with 
 
 --secondary-font: "Varela", sans-serif;
 Modern, clean and minimalists making good contrast with the primary font yet still being in the same family, boasts the same accessibility 
-for people with reading difficulties. ie. dyslexic reader. 
+for people with reading difficulties. ie. dyslexic reader. Applied to <p> text. 
 
 
 ### Icons
@@ -370,13 +370,7 @@ To allow users to see the Health Centre's facilities in more detail, key for use
   <img src="https://user-images.githubusercontent.com/44118951/92344160-fd78d700-f0c5-11ea-9017-7046a210424f.png" alt="Gallery Page">
 </div>
 
-#### Classes Headings
-
-#### Classes Headings and Text with Image
-
-A detailed description of the different classes split into 2 main headings: The 'Health Forum' and 'Fitness Classes'.  As the Health Forum is a business goal priority, these have been positioned at the top of the page.
-Utilising container class and defining columns, with different devices the images will stack underneath accordingly ensuring the information takes presedence. The Fitness Classes contain wikipedia links that open in a different tab.
-
+#### Classes Page
 
 <div align="center">
   <img src="assets/readmeassets/readme-classes-desktop.png" alt="Classes Desktop">
@@ -394,42 +388,63 @@ Spacing between class containers to seperate them visually whilst optimising spa
 
 ### Contact Page
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/44118951/92344558-159d2600-f0c7-11ea-9e1d-836b5bc2586a.png" alt="Iframe Gallery">
+  <img src="assets/Readmeassets/readme-contact-desktop.png" alt="Contact Desktop">
+</div>
+<div align="center">
+  <img src="assets/Readmeassets/readme-contact-tablet.png" alt="Contact Tablet">
 </div>
 
-- A simple page highlighting the author with a contact form that utilises [EmailJS](https://www.emailjs.com/) to send the emails.
-- The form has validation and is fully responsive.
-- Once the send button is pressed, a modal will open notifying the user that the message is sending.
-- The modal has fields that are modified by the `sendMail.js` script.
-- A success or an error message will be displayed depending on the result.
-- The form fields will be cleared only on a successful response.
-- A response message is sent to every email received, set up in EmailJS as a template.
+## Register Page 
+<div align="center">
+  <img src="assets/Readmeassets/readme-register-desktop.png" alt="Register Desktop">
+</div>
 
-## Additional Features
-### Image Loading Blur
-- All images utilise a loading blur function to smooth out their loading as the high-quality images can slow things down.
-- The function places a low-quality thumbnail as the default image, covering it with a CSS blur filter.
-- Simultaneously, it loads the full quality image set as the background image. Once it detects it is loaded it adds a class.
-- The class makes the thumbnail transparent, using animation to smooth the transition.
-- Had to be carefully used to correctly open the image modal.
+- Heading and welcome text informing user of expected turn around for response. 
+- Membership table detailing pricing and discount for Business Goal.
+- Form with optional checkbox and mandatory text fields, along with warnings. 
+- Button directing to success.html - Only if mandatory form elenment criteria met. 
 
-### Email
-- EmailJS is functional on every page through the newsletter form.
-- The newsletter form has all the same basic features, like the contact form; validation, the modal, success and error messages are all present.
-- Differentiates between the contact page form for messages and the newsletter form.
+<div align="center">
+  <img src="assets/Readmeassets/readme-register-tablet.png" alt="Register Tablet">
+</div>
+
+- Membership table wraps with smaller device. 
+
+<div align="center">
+  <img src="assets/Readmeassets/readme-register-mobile.png" alt="Register Mobile">
+</div>
+- Overflow enables horizontal scroll bar to view all table information. 
+
+## Success Page
+
+<div align="center">
+  <img src="assets/Readmeassets/readme-success-desktop.png" alt="Success Desktop">
+
+ - Success Message with phone link and return to index.html button.
+ - Beneath message insert same contact box layout as contact.html.  
+</div>
+<div align="center">
+  <img src="assets/Readmeassets/readme-success-tablet.png" alt="Success Tablet">
+</div>
+
+ - Scales down for tablet.
+<div align="center">
+  <img src="assets/Readmeassets/readme-success-mobile.png" alt="Success Mobile">
+</div>
+
+- Stacks vertically for mobile.
+ 
+
+
+
+
 
 ## Feature Ideas
-### Basic
-- A selection of countries to click on that brings you directly to the gallery.
-- The ability to share photos directly to social media.
-- Purchasing on the site
-- More details about countries.
+### Future Developement Ideas
+- A 360 degree tour allowing users to interact with their virtual tour of the gym. Either through Googlemaps or a software company such as Kuula. (https://kuula.co/)
+- Wider range of class information, such as timetables for existing members. 
+- Account and Checkout functionality for memberships. 
 
-### Content 
-- A wider range of countries and images. At the moment I didn't want to clutter the map.
-- The user selects a country and an API pull in relevant images of that location.
-- An API wherein the placename and the blurb are automatically generated.
-- Blog posts on the website for more flavour text.
 
 ----
 
@@ -439,8 +454,6 @@ Spacing between class containers to seperate them visually whilst optimising spa
     * Page markup.
 - [CSS](w3.org/standards/webdesign/htmlcss)
     * Styling.
-- [SASS](https://sass-lang.com/)
-    * Used to customise Bootstrap and CSS styles.
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     * Running functions for interactive components, AJAX, etc.
 
@@ -451,30 +464,20 @@ Spacing between class containers to seperate them visually whilst optimising spa
 - [JQuery](https://jquery.com/)
     * Animations and click functions.
 - [Google Fonts](https://fonts.google.com)
-    * Font Styles.
-- [Fontawesome](https://fontawesome.com/)
-    * Used for icons
+    * Font Styles and icons. 
 
-## APIs
-- [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial)
-    * Map, markers and styles.
-- [REST Countries API](https://restcountries.eu/)
-    * Statistics for infowindow, marker information
+
 
 ## Platforms
 - [Github](https://github.com/)
     * Storing code remotely and deployment.
-- [Gitpod](https://gitpod.io/)
-    * IDE for project development.
+- [VS Code](https://code.visualstudio.com/)
+    * IDE Environment. 
 
 ## Other Tools
 - [Balsamiq](https://balsamiq.com/)
     * To create wireframes.
-- [Favicon Generator](https://www.favicon-generator.org/)
-    * Favicons
-- [Mockup Generator](https://techsini.com/multi-mockup/index.php)
-    * For device mockup images.
-- [Coolors](https://coolors.co/)
+- [Coolor Picker](https://colorpicker.tools/)
     * Creating color pallettes.
 
 ----
@@ -485,6 +488,7 @@ Spacing between class containers to seperate them visually whilst optimising spa
 - [Full testing external mastersheet](https://docs.google.com/spreadsheets/d/1MpcjnFR0sRtm0FBuqfoiV8ybn5v_BY5CXubD8ImN6pg/edit?usp=sharing).
 
 ### Validation
+
 - HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/).
 
@@ -499,6 +503,75 @@ Spacing between class containers to seperate them visually whilst optimising spa
 - External links open in a new tab.
 - Font and color placement.
 - Image resolutions intrinsic vs rendered checekd. 
+- adhoc troubleshooting with the aid of Code Institute Network and https://www.stackoverflow.com. 
+
+### User Stories Testing
+- 1. "As a user interested in joining a gym, I want an easy to navigate website with all the information easy to find."
+
+Acheived by:
+  -Hompepage design and navigation. Home page designed so that landing view provides all the neccessary links in the navigation
+  -Service cards providing additional information with links to these pages also. 
+
+<div align="center">
+  <img src="assets/testingassets/testing-userstories-1.png" alt="User Story 1">
+</div>
+
+
+- 2. "I expect to be able to find out what facilities and classes the gym has."
+  - Homepage-Classes Navigation 
+  <div align="center">
+  <img src="assets/testingassets/testing-userstories-2b.png" alt="User Story 2">
+</div>
+
+  -'Take the Tour' youtube video giving the user a guided tour of the gym. 
+  <div align="center">
+  <img src="assets/testingassets/testing-userstories-2c.png" alt="User Story 2b">
+</div>
+  
+  
+
+- 3. "I expect to be able to register to join as a member."
+  - 'Join' Call to action clearly displayed in the navigation as well as service card. 
+   <div align="center">
+  <img src="assets/testingassets/testing-userstories-3.png" alt="User Story 3">
+</div>
+
+
+- 4. I expect to be able to contact and find the health centre.
+   - 'Contact' Call to action clearly displayed in the navigation as well as service card. 
+
+    <div align="center">
+  <img src="assets/testingassets/testing-userstories-4.png" alt="User Story 4">
+</div>
+  <div align="center">
+  <img src="assets/Readmeassets/readme-contact-desktop.png" alt="User Story 4b">
+</div>
+
+- 5. I expect to see imagery which is health focussed. 
+  - Design choices: lifestyle imagery, background, blue & green color scheme, large focus on the 'Health Forum' class promotion.
+
+    <div align="center">
+  <img src="assets/Readmeassets/readme-lifestyleimages.png" alt="lifestyle imagery">
+</div> 
+    <div align="center">
+  <img src="assets/Readmeassets/readme-colors.png" alt="lifestyle imagery">
+</div> 
+
+- 6. I expect to be able to read more detailed information about the classes.
+
+   - Designated 'Classes' page (classes.html) detailing the activity, providing external wikipedia links for more information. 
+
+       <div align="center">
+  <img src="assets/Readmeassets/readme-classes-desktop.png" alt="Classes.html">
+</div> 
+
+- 7. I expect to be able to follow the health centre through social media.
+   - Social media icons clearly displayed centred in the footer. 
+
+       <div align="center">
+  <img src="assets/Readmeassets/readme-footer-tablet.png" alt="Classes.html">
+</div>  
+
 
 ### Mobile Testing
 - I tested the site personally on my Android Galaxy S24 device, going through the entire process, checking buttons, functions  out, etc. I was personally unable to test on iOS.
@@ -511,23 +584,71 @@ Spacing between class containers to seperate them visually whilst optimising spa
 - The sites functionality and navigation have been tested on Chrome, Firefox and Edge. 
 - Internet Explorer was not tested and the site was not developed with it in mind as support for the browser is gradually being dropped.
 
-### Functionality & Navigation by Browser and Device
+### Functionality and Navigation by Browser and Device
+
+  <div align="center">
+  <img src="assets/testingassets/testing-functionalityandnavigation-checklist.png" alt="Functionality & Navigation by Browser">
+</div>
+- [Full testing external mastersheet](https://docs.google.com/spreadsheets/d/1MpcjnFR0sRtm0FBuqfoiV8ybn5v_BY5CXubD8ImN6pg/edit?usp=sharing).
 
 
 ### Lighthouse Testing 
+*Summary screenshots show both mobile (Left) and desktop (Right) report summaries. 
+- [Full testing external mastersheet](https://docs.google.com/spreadsheets/d/1MpcjnFR0sRtm0FBuqfoiV8ybn5v_BY5CXubD8ImN6pg/edit?usp=sharing).
 
-## 
+## index.html
+<div align="center">
+  <img src="assets/testingassets/testing-lighthouse-index-summary.png" alt="Lighthouse Index Summary">
+</div>
 
+## classes.html
+<div align="center">
+  <img src="assets/testingassets/testing-lighthouse-classes-summary.png" alt="Lighthouse Classes Summary">
+</div>
+
+## contact.html
+<div align="center">
+  <img src="assets/testingassets/testing-lighthouse-contact-summary.png" alt="Lighthouse Contact Summary">
+</div>
+
+## contact-form.html
+<div align="center">
+  <img src="assets/testingassets/testing-lighthouse-contact-form-summary.png" alt="Lighthouse Contact Form Summary">
+</div>
+
+## register-form.html
+<div align="center">
+  <img src="assets/testingassets/testing-lighthouse-register-summary.png" alt="Lighthouse Register Form Summary">
+</div>
+
+## success.html
+<div align="center">
+  <img src="assets/testingassets/testing-lighthouse-success-summary.png" alt="Lighthouse Success Summary">
+</div>
+
+## Lighthouse Warning and Issue Resolution
+Please see [Full testing external mastersheet](https://docs.google.com/spreadsheets/d/1MpcjnFR0sRtm0FBuqfoiV8ybn5v_BY5CXubD8ImN6pg/edit?usp=sharing). Lighthouse-tab for more information. 
+### #1
+- Page: classes.html 
+- Section: Accessibility
+- Type: Warning
+- Message: 'Heading elements are not in sequentially-descending order.  '
+- Source: H3 Headers in class text. 
+- Action: Update to H2 Headers
+- Status: Resolved 
+
+### #2
+- Page(s): contact.html ; success.html
+- Section: SEO
+- Type: Warning
+- Message:  Background and foreground colors do not have sufficient contrast ratio. 
+- Source: Address and Google map background against phone text. 
+- Action: Update color to white for full contrast. 
+- Status: Resolved 
 
 
 ## Bugs
-### Known Bugs
-
-
-
-
-
-### Fixed Bugs
+No bugs have been identified in testing. 
 
 # Deployment
 ## Local Deployment
@@ -570,33 +691,24 @@ Spacing between class containers to seperate them visually whilst optimising spa
 6. Enjoy the site!
 
 ## Github Deployment
-### Github Preparation
-- It is possible to copy or clone the repository to directly for deployment, but you will have to compile the make sure the SCSS compiles correctly first. Github Pages' Jekyll themes support this but you will have to make some customisations. Details can be found [here](https://jekyllrb.com/docs/assets/).
-**Requirements:**
-- A free GitHub account.
-- A free EmailJS account.
 
 ### Github Instructions
 1. Log in to your GitHub account.
-navigate to [https://github.com/Ri-Dearg/neverlost-thrift](https://github.com/Ri-Dearg/neverlost-thrift).
+navigate to [[https://github.com/Ri-Dearg/neverlost-thrift](https://github.com/JamesBirchall-dev/Invital-Health-Centre)](https://github.com/JamesBirchall-dev/Invital-Health-Centre).
 1. You can set up your own repository and copy or clone it, or you fork the repository.
 2. `git add`, `git commit` and `git push` to a GitHub repository, if necessary.
 3. GitHub pages will update from the master branch by default.
 4. Go to the **Settings** page of the repository.
 5. Scroll down to the **Github Pages** section.
 7. Select the Master Branch as the source and **Confirm** the selection.
-8. Wait a minute or two and it should be live for viewing. See my own [here](https://ri-dearg.github.io/horizon-photo/).
+8. Wait a minute or two and it should be live for viewing. See my own [here](https://jamesbirchall-dev.github.io/Invital-Health-Centre/).
 
 ## Credits and Contact
 ### Content
-Nearly all text content was generated by the AI, GPT-2, at [Talk to Transformer](https://talktotransformer.com/).
-**(So there will be plenty of grammar or spelling errors or even a bit of nonsense, but I thought it would be a fun addition to the project)88 
-Any code utilised from a site is documented and credited within the code.
-All photographs, authors, license rights, copyright, etc. used in this project can be found [here](https://unsplash.com/collections/8825126/used-in-horizon-photo). No credit is required from Unsplash,  
-All other media used is my own.
+Imagery was almost exclusively obtained through [istockphoto](https://www.istockphoto.com/).
 
 ### Contact
-Please feel free to contact me at `sheridan.rp@gmail.com`
+Please feel free to contact me at `jamesbdorel@gmail.com`
 
 
 
