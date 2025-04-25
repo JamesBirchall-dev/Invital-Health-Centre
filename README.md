@@ -50,6 +50,7 @@
      - [Contact Page](#contact-page)
      - [Register Page](#register-page)
      - [Success Page](#success-page)
+     - [Contact Form](#contact-form)
     </details></li> 
 
     <li><details>
@@ -275,6 +276,7 @@ Mobile Nav (Collapsed & expanded)
 - Button also in the nav for 'Join' which directs user to the Register page. This stands out more than the other links to make the registration process easy and more likely.  
 - Hover over functionality  on links. 
 - On smaller devices, the menu becomes collapsible.
+- Bootstrap 5 elements broken down in this sheet https://docs.google.com/document/d/1BvyNlDbG85mt_AnDzTFATYOsyBalbLm7DthT1MtFjgA/edit?usp=sharing
 
 
 #### Footer
@@ -292,9 +294,13 @@ Tablet
 - Hover over functionality and high contrast icons against the footer background. 
 
 ### Index Page
+
+The homepage has been designed to maximise navigation and information within landing view, whilst upholding the asthetic of the site. 
+This is acheived with a sliding carousel with 3 slides, each directing to a part of the site, then the service cards below providing more information and a bolder text on background to stand out in the page.  You will see a mission statement below this to provide more information on branding then finally a tour video fo the user to browse the facilities. 
+
 #### Carousel With Captions
 - Using [Bootstrap](https://getbootstrap.com/docs/4.0/components/carousel/) as a template. 
-- 3 x images on automatic change. 
+- 3 x images on automatic change.  [Index Bootstrap Elements](https://docs.google.com/document/d/1Lz-XzIniIzwuXU_tz8ReggDIRi7KBWEWQR4D297tFEI/edit?usp=sharing)
 - Caption text with Call to Action button linking to Classes & Register-Form (removed for mobile devices as too small to be interactive).
 - White indicators and text for contrast against images. 
 Desktop/Laptop
@@ -366,11 +372,15 @@ To allow users to see the Health Centre's facilities in more detail, key for use
 
 
 ### Classes Page
+The primary purpose of this page is to show the user what kind of classes the gym has to offer members, as with the Business Goal of promoting the new 'Health Forum', this sits at the top of the page as priority and with the flexible bootstrap classes, it makes for a good experience with scrolling on hand held devices. 
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/44118951/92344160-fd78d700-f0c5-11ea-9017-7046a210424f.png" alt="Gallery Page">
 </div>
 
-#### Classes Page
+
+- Bootstrap 5 elements broken down in this sheet [Classes Bootastrap Elements](https://docs.google.com/document/d/1tN2jn3ORCs-YBwR9UFiZBwcn5GD6hB5dueIYM0cXcoE/edit?usp=sharing)
+
 
 <div align="center">
   <img src="assets/readmeassets/readme-classes-desktop.png" alt="Classes Desktop">
@@ -387,6 +397,8 @@ Image stacks underneath for tablet ensuring text information has reading priorit
 Spacing between class containers to seperate them visually whilst optimising space. 
 
 ### Contact Page
+The purpose of this page is to provide the neccessary information to contact the business, with a primary focus on trying to get the user to choose form contact over the phone (whilst making this accessible still).
+-  Bootstrap 5 elements broken down in this sheet [Contact Bootastrap Elements](https://docs.google.com/document/d/1XieEHmNwVU2Tya-WhcT6FXTDByMCNL7RiMXEJUwkH3U/edit?usp=sharing)
 <div align="center">
   <img src="assets/Readmeassets/readme-contact-desktop.png" alt="Contact Desktop">
 </div>
@@ -395,6 +407,9 @@ Spacing between class containers to seperate them visually whilst optimising spa
 </div>
 
 ## Register Page 
+This page is designed to easily display membership pricing information and for the user to be able to submit interest for membership (with the kind of membership they want) and their contact details for the staff at the gym to prepare for the appropiate next steps with the user. 
+
+-  Bootstrap 5 elements broken down in this sheet [Register Bootastrap Elements](https://docs.google.com/document/d/18ECCWaVpi4yynrV19uudBJnjc3bctX6IdtXs8tG1UtA/edit?usp=sharing)
 <div align="center">
   <img src="assets/Readmeassets/readme-register-desktop.png" alt="Register Desktop">
 </div>
@@ -416,7 +431,9 @@ Spacing between class containers to seperate them visually whilst optimising spa
 - Overflow enables horizontal scroll bar to view all table information. 
 
 ## Success Page
+This page confirms to the user that their message has been sent. This page directs both from the contact-form.html and register-form.html submissions. It also allows for easy navigation back to the home page so they can continue browsing the site. 
 
+-  Bootstrap 5 elements broken down in this sheet [Success Bootastrap Elements](https://docs.google.com/document/d/1tST-KRPXV6kTPkd2zjjJlJLHd1KfleX0C8LjhUV5xd4/edit?usp=sharing)
 <div align="center">
   <img src="assets/Readmeassets/readme-success-desktop.png" alt="Success Desktop">
 
@@ -434,9 +451,23 @@ Spacing between class containers to seperate them visually whilst optimising spa
 
 - Stacks vertically for mobile.
  
+## Contact Form
+-Simple form page with CTA button directing to success.html. 
+-All fields mandatory and validation format correct for each field. (ie email must have an @ in it)
 
+-  Bootstrap 5 elements broken down in this sheet [Contact Form Bootastrap Elements](https://docs.google.com/document/d/1tST-KRPXV6kTPkd2zjjJlJLHd1KfleX0C8LjhUV5xd4/edit?usp=sharing)
 
+<div align="center">
+  <img src="assets/Readmeassets/readme-contactform-desktop.png" alt="Contact Form Desktop">
+</div>
 
+<div align="center">
+  <img src="assets/Readmeassets/readme-contactform-tablet.png" alt="Contact Form Tablet">
+</div>
+
+<div align="center">
+  <img src="assets/Readmeassets/readme-contactform-mobile.png" alt="Contact Form Mobile">
+</div>
 
 
 ## Feature Ideas
@@ -655,40 +686,7 @@ No bugs have been identified in testing.
 ### Local Preparation
 **Requirements:**
 - An IDE of your choice, such as [Visual Studio Code](https://code.visualstudio.com/)
-- [Git](https://git-scm.com/)
-- You will have to set up a connection with an email server through EmailJS:
-- You will have to install SASS to compile the CSS. This depends on your system and your method choice. Please see the instructions [here](https://sass-lang.com/install).
-
-### Local Instructions
-1. Download a copy of the project repository [here](https://github.com/Ri-Dearg/neverlost-thrift/archive/master.zip) and extract the zip file to your base folder. Or you can clone the repository with:
-    ```
-    git clone https://github.com/Ri-Dearg/neverlost-thrift
-    ```
-    To disconnect it from the master repository, use:
-    ```
-    git remote rm origin
-    ```
-2. Open your IDE and choose the base directory.
-3. Here you can install SASS with npm, if you choose, with:
-    ```
-    npm install -g sass
-    ```
-4. Run the compiler with:
-    ```
-    sass --watch assets/css/bootstrap_sass:assets/css
-    ```
-    This will also watch the bootstrap_sass folder for changes and re-compile the CSS when they are made. This way you can make changes quickly and not worry about re-compiling.
-6. Switch the user token for EmailJS with your own. It can be found in the head tag:
-    ```
-    (function () {
-        emailjs.init("<your user token>");
-    })();
-    ```
-5. Run the project with your chosen method. You can drop index.html into a web browser and it should run fine, open a local port and access it or, if you have python installed, run it on an HTTP server with python with a command such as:
-    ```
-    python3 -m http.server
-    ```
-6. Enjoy the site!
+- Github Account
 
 ## Github Deployment
 
